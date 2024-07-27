@@ -13,9 +13,7 @@ app.use("/api/product", productRouter);
 
 // NOTE: DATABASE CONNECTION
 mongoose
-  .connect(
-    "mongodb+srv://<your-username>:<your-password>@simplecrud.juneaet.mongodb.net/Crud-API?retryWrites=true&w=majority&appName=simpleCRUD"
-  )
+  .connect("your database link")
   .then(() => {
     console.log("Connected to the database");
     app.listen(3000, () => {
